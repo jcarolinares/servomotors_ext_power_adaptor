@@ -1,0 +1,3 @@
+[submodule "servomotors_ext_pwr_adaptor/kicad-jcarolinares-lib"]
+	path = servomotors_ext_pwr_adaptor/kicad-jcarolinares-lib
+	url = https://github.com/jcarolinares/kicad-jcarolinares-lib
