@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name kicad-jcarolinares)(type Legacy)(uri ${KIPRJMOD}/kicad-jcarolinares-lib/symbols/kicad-jcarolinares.lib)(options "")(descr ""))
+)
