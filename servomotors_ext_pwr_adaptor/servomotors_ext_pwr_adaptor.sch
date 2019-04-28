@@ -745,17 +745,6 @@ Wire Wire Line
 	5850 5700 5950 5700
 Text Notes 5500 5450 0    50   ~ 0
 GND TO BOARD
-$Comp
-L power:VCC #PWR021
-U 1 1 5CC51E70
-P 6000 2500
-F 0 "#PWR021" H 6000 2350 50  0001 C CNN
-F 1 "VCC" H 6018 2673 50  0000 C CNN
-F 2 "" H 6000 2500 50  0001 C CNN
-F 3 "" H 6000 2500 50  0001 C CNN
-	1    6000 2500
-	-1   0    0    1   
-$EndComp
 Text GLabel 5250 3250 0    50   Input ~ 0
 S0
 Wire Wire Line
@@ -820,22 +809,8 @@ Wire Wire Line
 	6300 3850 6400 3850
 Wire Wire Line
 	6300 3950 6400 3950
-$Comp
-L kicad-jcarolinares:SW_DPDT_X2 U1
-U 1 1 5CC9BCD2
-P 5550 1550
-F 0 "U1" H 5550 1750 50  0000 C CNN
-F 1 "SW_DPDT_X2" H 5550 1350 50  0000 C CNN
-F 2 "kicad-jcarolinares:Switch_Slide_11.6x4mm_EG1218" H 5550 1783 50  0001 C CNN
-F 3 "https://www.e-switch.com/system/asset/product_line/data_sheet/119/EG.pdf" H 5550 1550 50  0001 C CNN
-	1    5550 1550
-	0    1    1    0   
-$EndComp
-NoConn ~ 5650 1750
 Wire Wire Line
 	5850 4950 5950 4950
-Text Notes 5350 850  0    50   ~ 0
-Power Switch
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5CC0E303
@@ -849,52 +824,6 @@ F 3 "~" H 4650 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4650 1050 4650 1150
-$Comp
-L kicad-jcarolinares:DMP3098L-7 U2
-U 1 1 5CC37B62
-P 5950 2100
-F 0 "U2" H 5700 2250 50  0000 L CNN
-F 1 "DMP3098L-7" V 6150 1850 50  0000 L CNN
-F 2 "kicad-jcarolinares:SOT95P240X110-3N" H 6200 1550 50  0001 L BNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds31447.pdf" H 6200 1650 50  0001 L BNN
-F 4 "SOT-23-3 Diodes Inc." H 6200 1800 50  0001 L BNN "Field6"
-F 5 "DMP3098L-7" H 6200 1900 50  0001 L BNN "Field8"
-	1    5950 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5CC44480
-P 6550 2100
-F 0 "D1" V 6589 1983 50  0000 R CNN
-F 1 "GREEN" V 6498 1983 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 6550 2100 50  0001 C CNN
-F 3 "~" H 6550 2100 50  0001 C CNN
-	1    6550 2100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6000 800  6000 900 
-Wire Wire Line
-	6000 900  5550 900 
-Wire Wire Line
-	5550 900  5550 1350
-Connection ~ 6000 900 
-Wire Wire Line
-	5450 1750 5450 2200
-Wire Wire Line
-	5450 2200 5600 2200
-$Comp
-L power:+5V #PWR039
-U 1 1 5CC6DA7F
-P 6000 800
-F 0 "#PWR039" H 6000 650 50  0001 C CNN
-F 1 "+5V" H 6015 973 50  0000 C CNN
-F 2 "" H 6000 800 50  0001 C CNN
-F 3 "" H 6000 800 50  0001 C CNN
-	1    6000 800 
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR017
 U 1 1 5CC6EC42
@@ -917,45 +846,6 @@ F 3 "" H 5950 4950 50  0001 C CNN
 	1    5950 4950
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR019
-U 1 1 5CC710B6
-P 5450 2700
-F 0 "#PWR019" H 5450 2450 50  0001 C CNN
-F 1 "GND" H 5550 2550 50  0000 R CNN
-F 2 "" H 5450 2700 50  0001 C CNN
-F 3 "" H 5450 2700 50  0001 C CNN
-	1    5450 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 2400 6000 2500
-Wire Wire Line
-	6000 900  6000 1800
-$Comp
-L power:GND #PWR041
-U 1 1 5CC58EF2
-P 6550 2350
-F 0 "#PWR041" H 6550 2100 50  0001 C CNN
-F 1 "GND" H 6650 2200 50  0000 R CNN
-F 2 "" H 6550 2350 50  0001 C CNN
-F 3 "" H 6550 2350 50  0001 C CNN
-	1    6550 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR040
-U 1 1 5CC5B496
-P 6550 1450
-F 0 "#PWR040" H 6550 1300 50  0001 C CNN
-F 1 "VCC" V 6567 1578 50  0000 L CNN
-F 2 "" H 6550 1450 50  0001 C CNN
-F 3 "" H 6550 1450 50  0001 C CNN
-	1    6550 1450
-	1    0    0    -1  
-$EndComp
-Text Notes 6450 2050 1    50   ~ 0
-PWR LED
 Wire Wire Line
 	7900 2500 8000 2500
 $Comp
@@ -997,37 +887,4 @@ Wire Wire Line
 	5750 6350 5850 6350
 Text Notes 5550 6100 0    50   ~ 0
 5V to VCC
-Wire Wire Line
-	5450 2200 5450 2300
-Connection ~ 5450 2200
-Wire Wire Line
-	5450 2600 5450 2700
-$Comp
-L Device:R R1
-U 1 1 5CC803B0
-P 5450 2450
-F 0 "R1" H 5520 2496 50  0000 L CNN
-F 1 "1M" H 5520 2405 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5380 2450 50  0001 C CNN
-F 3 "~" H 5450 2450 50  0001 C CNN
-	1    5450 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5CC80428
-P 6550 1700
-F 0 "R2" H 6620 1746 50  0000 L CNN
-F 1 "180" H 6620 1655 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6480 1700 50  0001 C CNN
-F 3 "~" H 6550 1700 50  0001 C CNN
-	1    6550 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 1850 6550 1950
-Wire Wire Line
-	6550 1450 6550 1550
-Wire Wire Line
-	6550 2250 6550 2350
 $EndSCHEMATC
